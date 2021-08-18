@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,12 @@
 		023FDFDE26950A1900B0F3C3 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023FDFDD26950A1900B0F3C3 /* SearchResultViewController.swift */; };
 		023FDFE126950A3800B0F3C3 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023FDFE026950A3800B0F3C3 /* PostEditorViewController.swift */; };
 		023FDFE426950A4500B0F3C3 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023FDFE326950A4500B0F3C3 /* PublishPostViewController.swift */; };
+		0254A80D2696628300A4AA39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0254A80C2696628300A4AA39 /* GoogleService-Info.plist */; };
+		0254A8122697577300A4AA39 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254A8112697577300A4AA39 /* DatabaseManager.swift */; };
+		0254A815269758CB00A4AA39 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254A814269758CB00A4AA39 /* AuthManager.swift */; };
+		0254A8182697592A00A4AA39 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254A8172697592A00A4AA39 /* StorageManager.swift */; };
+		0254A8432697910200A4AA39 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254A8422697910200A4AA39 /* Extensions.swift */; };
+		8CFF9028DAD1A3768E8D1DA0 /* Pods_GTACH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C32135EFF2249B3A987447 /* Pods_GTACH.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,14 @@
 		023FDFDD26950A1900B0F3C3 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		023FDFE026950A3800B0F3C3 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		023FDFE326950A4500B0F3C3 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		0254A80C2696628300A4AA39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0254A8112697577300A4AA39 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		0254A814269758CB00A4AA39 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0254A8172697592A00A4AA39 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		0254A8422697910200A4AA39 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		41686930793F95DBA69F13FF /* Pods-GTACH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTACH.release.xcconfig"; path = "Target Support Files/Pods-GTACH/Pods-GTACH.release.xcconfig"; sourceTree = "<group>"; };
+		8CFC2D72BDD6358CFBBDD961 /* Pods-GTACH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTACH.debug.xcconfig"; path = "Target Support Files/Pods-GTACH/Pods-GTACH.debug.xcconfig"; sourceTree = "<group>"; };
+		C8C32135EFF2249B3A987447 /* Pods_GTACH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTACH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFF9028DAD1A3768E8D1DA0 /* Pods_GTACH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +85,8 @@
 			children = (
 				023FDF9A2695060600B0F3C3 /* GTACH */,
 				023FDF992695060600B0F3C3 /* Products */,
+				8D319F85D9E826B0EAC07CAA /* Pods */,
+				110ECE840DC6CA1367B8FAF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,8 +129,13 @@
 		023FDFB32695065F00B0F3C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0254A80C2696628300A4AA39 /* GoogleService-Info.plist */,
 				023FDF9B2695060600B0F3C3 /* AppDelegate.swift */,
 				023FDF9D2695060600B0F3C3 /* SceneDelegate.swift */,
+				0254A8112697577300A4AA39 /* DatabaseManager.swift */,
+				0254A814269758CB00A4AA39 /* AuthManager.swift */,
+				0254A8172697592A00A4AA39 /* StorageManager.swift */,
+				0254A8422697910200A4AA39 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,14 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				023FDFC72695093300B0F3C3 /* Onboarding */,
-				023FDFCE2695098800B0F3C3 /* PostViewController.swift */,
-				023FDFD1269509E200B0F3C3 /* EditProfileViewController.swift */,
-				023FDFD4269509EE00B0F3C3 /* SettingsViewController.swift */,
-				023FDFD7269509FB00B0F3C3 /* ListViewController.swift */,
-				023FDFDA26950A0700B0F3C3 /* SearchViewController.swift */,
-				023FDFDD26950A1900B0F3C3 /* SearchResultViewController.swift */,
-				023FDFE026950A3800B0F3C3 /* PostEditorViewController.swift */,
-				023FDFE326950A4500B0F3C3 /* PublishPostViewController.swift */,
+				0254A80F2697565000A4AA39 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -173,6 +188,38 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		0254A80F2697565000A4AA39 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				023FDFD4269509EE00B0F3C3 /* SettingsViewController.swift */,
+				023FDFCE2695098800B0F3C3 /* PostViewController.swift */,
+				023FDFD1269509E200B0F3C3 /* EditProfileViewController.swift */,
+				023FDFD7269509FB00B0F3C3 /* ListViewController.swift */,
+				023FDFDA26950A0700B0F3C3 /* SearchViewController.swift */,
+				023FDFDD26950A1900B0F3C3 /* SearchResultViewController.swift */,
+				023FDFE026950A3800B0F3C3 /* PostEditorViewController.swift */,
+				023FDFE326950A4500B0F3C3 /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		110ECE840DC6CA1367B8FAF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8C32135EFF2249B3A987447 /* Pods_GTACH.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D319F85D9E826B0EAC07CAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CFC2D72BDD6358CFBBDD961 /* Pods-GTACH.debug.xcconfig */,
+				41686930793F95DBA69F13FF /* Pods-GTACH.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 023FDFAC2695060900B0F3C3 /* Build configuration list for PBXNativeTarget "GTACH" */;
 			buildPhases = (
+				859CD422F20EB5F2BA093BE5 /* [CP] Check Pods Manifest.lock */,
 				023FDF942695060600B0F3C3 /* Sources */,
 				023FDF952695060600B0F3C3 /* Frameworks */,
 				023FDF962695060600B0F3C3 /* Resources */,
+				34EE1F0043BF87DDF25321A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,12 +280,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				023FDFA82695060900B0F3C3 /* LaunchScreen.storyboard in Resources */,
+				0254A80D2696628300A4AA39 /* GoogleService-Info.plist in Resources */,
 				023FDFA52695060900B0F3C3 /* Assets.xcassets in Resources */,
 				023FDFA32695060600B0F3C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34EE1F0043BF87DDF25321A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTACH/Pods-GTACH-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTACH/Pods-GTACH-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTACH/Pods-GTACH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		859CD422F20EB5F2BA093BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTACH-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		023FDF942695060600B0F3C3 /* Sources */ = {
@@ -250,12 +342,16 @@
 				023FDFA02695060600B0F3C3 /* HomeViewController.swift in Sources */,
 				023FDFCC2695096700B0F3C3 /* RegistrationViewController.swift in Sources */,
 				023FDFE126950A3800B0F3C3 /* PostEditorViewController.swift in Sources */,
+				0254A8182697592A00A4AA39 /* StorageManager.swift in Sources */,
 				023FDFCF2695098800B0F3C3 /* PostViewController.swift in Sources */,
+				0254A8122697577300A4AA39 /* DatabaseManager.swift in Sources */,
 				023FDFBF269507AD00B0F3C3 /* NotificationsViewController.swift in Sources */,
 				023FDFDE26950A1900B0F3C3 /* SearchResultViewController.swift in Sources */,
 				023FDFC92695094B00B0F3C3 /* LoginViewController.swift in Sources */,
+				0254A8432697910200A4AA39 /* Extensions.swift in Sources */,
 				023FDFDB26950A0700B0F3C3 /* SearchViewController.swift in Sources */,
 				023FDFC2269507BB00B0F3C3 /* ProfileViewController.swift in Sources */,
+				0254A815269758CB00A4AA39 /* AuthManager.swift in Sources */,
 				023FDF9C2695060600B0F3C3 /* AppDelegate.swift in Sources */,
 				023FDF9E2695060600B0F3C3 /* SceneDelegate.swift in Sources */,
 				023FDFD8269509FB00B0F3C3 /* ListViewController.swift in Sources */,
@@ -403,12 +499,14 @@
 		};
 		023FDFAD2695060900B0F3C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFC2D72BDD6358CFBBDD961 /* Pods-GTACH.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SWDJH7C46;
 				INFOPLIST_FILE = GTACH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,12 +520,14 @@
 		};
 		023FDFAE2695060900B0F3C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41686930793F95DBA69F13FF /* Pods-GTACH.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SWDJH7C46;
 				INFOPLIST_FILE = GTACH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

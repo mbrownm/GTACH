@@ -1,0 +1,6 @@
+framework module Pods_GTACH {
+  umbrella header "Pods-GTACH-umbrella.h"
+
+  export *
+  module * { export * }
+}
